@@ -256,7 +256,7 @@ export default function Home() {
         }
 
         .deleteBtn {
-          background: #ef4444;
+          background: #ef4444;-
           color: white;
           border: none;
           padding: 6px 12px;
