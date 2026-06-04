@@ -1,40 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+Notice Board – Full Stack Web Application
 
-## Getting Started
+A full-stack Notice Board application built using Next.js, Prisma ORM, and MySQL.
+This project demonstrates CRUD operations with a responsive frontend and backend API integration.
 
-First, run the development server:
+Live Demo:
 
-```bash
+https://notice-board-eight.vercel.app/
+
+GitHub Repository:
+
+https://github.com/aaanshul07/notice-board.git
+
+Tech Stack:
+
+Next.js (Pages Router)
+React.js
+Prisma ORM
+MySQL (TiDB Cloud)
+Node.js
+CSS (custom styling)
+Vercel (deployment)
+
+Features:
+
+Notice Management (CRUD)
+Create new notices
+View all notices
+Update existing notices
+Delete notices with confirmation
+
+Priority System:
+
+Urgent notices are highlighted
+Normal notices displayed separately
+
+User Interface:
+
+Clean card-based layout
+Responsive design for mobile and desktop
+Hover effects for better interaction
+Simple and readable UI structure
+
+Backend Features:
+
+Next.js API routes for backend logic
+Prisma ORM for database operations
+MySQL cloud database integration
+REST API structure (GET, POST, PUT, DELETE)
+
+Project Structure:
+
+notice-board/
+│
+├── pages/
+│   ├── api/
+│   │   └── notices/
+│   │       ├── index.js
+│   │       └── [id].js
+│   ├── index.js
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── lib/
+│   └── prisma.js
+│
+├── package.json
+
+
+Setup Instructions:
+
+Clone Repository
+git clone https://github.com/aaanshul07/notice-board.git
+cd notice-board
+Install Dependencies
+npm install
+Environment Variables
+
+Create a .env file:
+
+DATABASE_URL="mysql://username:password@host:4000/database?sslaccept=strict"
+
+Run Prisma
+npx prisma db push
+
+Start Development Server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+http://localhost:3000
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+What I Learned:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Full-stack development using Next.js
+Building REST APIs
+Prisma ORM with MySQL
+CRUD operations implementation
+UI development and state management
+Deployment workflow using GitHub and Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Future Improvements:
 
-## Learn More
+Authentication system (login/register)
+Role-based access control
+Search and filter functionality
+Pagination for notices
+File/image upload support
 
-To learn more about Next.js, take a look at the following resources:
+Author:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Anshul Yadav
+Web Development Intern Project
